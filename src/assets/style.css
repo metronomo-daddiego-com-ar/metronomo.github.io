@@ -1,0 +1,82 @@
+.container-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-group button {
+    border: var(--background-dark);
+    border-radius: 0;
+}
+
+.button-group button:focus {
+    box-shadow: none;
+}
+
+.button-group .button-pressed {
+    background-color: var(--secondary-hover);
+}
+
+header {
+    background-color: var(--background-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 60px;
+}
+
+.subheader {
+    background-color: var(--background-color);
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.bottom-buttons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+    margin-bottom: -20px;
+    background-color: var(--background-color);
+}
+
+.metronome-header {
+    position: fixed;
+    background-color: var(--background-color);
+    width: 100%;
+    top: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: 180px;
+}
+
+.button-play {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+.button-stop {
+    background-color: firebrick;
+    border-color: firebrick;
+}
+
+.button-danger {
+    color: firebrick;
+}
+
+.button-success {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+td,
+input {
+    font-size: x-large;
+}
+
+select {
+    font-size: large;
+}
