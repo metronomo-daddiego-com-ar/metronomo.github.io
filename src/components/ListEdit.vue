@@ -50,7 +50,7 @@ function endDragging() {
                             <i class="bi-list"></i>
                         </td>
                         <td style="text-align: start;">
-                            {{ index}}
+                            {{ index + 1 }}
                         </td>
                         <td>
                             {{ getSongById(element).name }}
