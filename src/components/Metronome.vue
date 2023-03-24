@@ -92,9 +92,7 @@ function setCurrentListIndex(index) {
     })
     currentSongIndex.value = 0
     advanceSongBy(0)
-    console.log(index)
     store.currentListIndex = index
-    console.log(store.currentListIndex)
 }
 
 function advanceSongBy(amount) {
@@ -125,11 +123,11 @@ function advanceSongBy(amount) {
         </div>
         <span class="container-flex">
             <select style="width: 95%" @change="setCurrentListIndex($event.target.value)">
-                <option disabled selected>Elija la lista deseada</option>
+                <option disabled selected>{{ $t("choose_list") }}</option>
                 <option v-if="store.lists.length > 0" :value="index" v-for="list, index in store.lists">
                     {{ list.name }}
                 </option>
-                <option v-else> No hay listas creadas</option>
+                <option v-else>{{ $t("no_list") }}</option>
             </select>
         </span>
         <div v-if="currentSong.name" style="text-align: center;">

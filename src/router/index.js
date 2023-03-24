@@ -9,25 +9,25 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Metrónomo',
+      name: 'metronome',
       component: Main,
       meta: {isNav: true}
     },
     {
       path: '/songs',
-      name: 'Canciones',
+      name: 'songs',
       component: Songs,
       meta: {isNav: true}
     },
     {
       path: '/lists',
-      name: 'Listas',
+      name: 'songlists',
       component: Lists,
       meta: {isNav: true}
     },
     {
       path: '/lists/:index',
-      name: 'Editando Lista',
+      name: 'editing_songlist',
       component: ListEdit,
       meta: {isNav: false}
     }

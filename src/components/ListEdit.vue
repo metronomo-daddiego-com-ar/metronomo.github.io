@@ -37,7 +37,7 @@ function endDragging() {
 <template>
     <div class="subheader">
         <div class="container-flex">
-            <h4>Editando {{ list.name }}</h4>
+            <h4>{{ $t("editing") }} {{ list.name }}</h4>
         </div>
     </div>
     <div style="margin-top: 120px;">
@@ -61,7 +61,7 @@ function endDragging() {
                     </tr>
                 </template>
             </draggable>
-            <p v-else>Esta lista no tiene canciones.</p>
+            <p v-else>{{ $t('list_no_songs') }}</p>
         </div>
         <div class="container-flex">
             <table v-if="songsNotInList().length > 0" class="table" cellspacing="0" cellpadding="4">
@@ -74,7 +74,7 @@ function endDragging() {
                     </td>
                 </tr>
             </table>
-            <p v-else>No hay canciones para agregar</p>
+            <p v-else>{{ $t("no_more_songs") }}</p>
         </div>
     </div>
 </template>

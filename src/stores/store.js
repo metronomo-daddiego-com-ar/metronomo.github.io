@@ -6,7 +6,6 @@ export const useStore = defineStore({
     state: () => ({
         songs: useStorage('songs', []),
         lists: useStorage('lists', []),
-        currentTitle: 'Metrónomo'
     }),
     actions: {
         addSong(song) {

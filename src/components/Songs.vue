@@ -27,7 +27,7 @@ function saveSong() {
 <template>
     <div class="subheader">
         <div class="container-flex">
-            <input style="width: 55%;" maxlength="20" v-model="name" placeholder="Nombre" />
+            <input style="width: 55%;" maxlength="20" v-model="name" :placeholder="$t('name')" />
             <input style="width: 20%;" min="50" max="250" type="number" v-model="tempo" placeholder="120" />
             <button class="button-success" style="width: 15%;" @click="saveSong()">
                 <i class="bi-plus-lg"></i>
@@ -49,7 +49,7 @@ function saveSong() {
         </tr>
     </table>
     <div v-else class="container-flex">
-        <p>No hay canciones cargadas</p>
+        <p>{{ $t("no_songs") }}</p>
     </div>
 </template>
 <style scoped>

@@ -30,7 +30,7 @@ function listDetails(listIndex) {
 <template>
     <div class="subheader">
         <div class="container-flex">
-            <input style="width: 75%;" maxlength="20" v-model="name" placeholder="Nombre" />
+            <input style="width: 75%;" maxlength="20" v-model="name" :placeholder="$t('name')" />
             <button class="button-success" style="width: 15%;" @click="addList()">
                 <i class="bi-plus-lg"></i>
             </button>
@@ -48,7 +48,7 @@ function listDetails(listIndex) {
         </tr>
     </table>
     <div v-else class="container-flex">
-        <p>No hay listas creadas</p>
+        <p>{{ $t("no_lists") }}</p>
     </div>
 </template>
 <style scoped>

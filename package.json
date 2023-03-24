@@ -10,12 +10,14 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@intlify/unplugin-vue-i18n": "^0.10.0",
     "@picocss/pico": "^1.5.7",
     "@vueuse/core": "^9.13.0",
     "bootstrap-icons": "^1.10.3",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.32",
     "vue": "^3.2.47",
+    "vue-i18n": "^9.2.2",
     "vue-router": "^4.1.6",
     "vuedraggable": "^4.1.0"
   },
