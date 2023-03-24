@@ -48,7 +48,7 @@ function listDetails(listIndex) {
         </tr>
     </table>
     <div v-else class="container-flex">
-        <p>{{ $t("no_lists") }}</p>
+        <p>{{ $t("no_list") }}</p>
     </div>
 </template>
 <style scoped>
